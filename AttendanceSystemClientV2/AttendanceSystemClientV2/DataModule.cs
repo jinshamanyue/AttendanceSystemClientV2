@@ -2,6 +2,7 @@
 using System.ComponentModel;
 using System.Linq;
 using System.Windows.Forms;
+using AttendanceSystemClientV2.PC;
 using RemObjects.SDK;
 using RemObjects.DataAbstract;
 using RemObjects.DataAbstract.Linq;
@@ -92,6 +93,7 @@ namespace AttendanceSystemClientV2
         #region LogOn/LogOff Handling
         public Boolean LogOn(String userId, String password)
         {
+            MessageBox.Show("logon");
             // Note that if your application will use more than 1 Schema in this Domain you should
             // make this Schema active before retrieving data (see the SetActiveSchema method)
 
@@ -122,6 +124,24 @@ namespace AttendanceSystemClientV2
             this.remoteService.ServiceName = "DataService." + schemaName;
             this.SchemaName = schemaName;
         }
+
+        public void getdata()
+        {
+            
+            try
+            {
+                IQueryable<JSANDKKVIEWRO> ttt = remoteDataAdapter.GetTable<JSANDKKVIEWRO>();
+                MessageBox.Show(ttt.Any().ToString()+"第二条语句执行了");
+            }
+            catch (RemObjects.SDK.Exceptions.SessionNotFoundException excp)
+            {
+
+                MessageBox.Show("登录异常 请重新登录");
+            }
+
+
+        }
+
         #endregion
     }
 }

@@ -9,7 +9,8 @@
 //------------------------------------------------------------------------------
 
 // #DA Schema Name:"PC"
-// #DA Skipped Tables:"DSS_E1_BAS009,DSS_E1_SYS100,DSS_E1_SYS101,DSS_E1_SYS102,DSS_E1_SYS103,DSS_E1_SYS104,DSS_E1_SYS105,DSS_E1_SYS106,DSS_E1_SYS107,DSS_E1_TMP100,BJTABLE_09_VIEW,KCTABLE_04,KKTABLE_05_VIEW,RLSBGROUP_10,RLSBGROUPSTUDENT_11,XYTABLE_02,XKTABLE_06_VIEW,DMTABLE_08_VIEW,XSTABLE_01_VIEW,JSTABLE_03_VIEW,SKTABLE_07_VIEW,DMTABLE_08_BS,XSTABLE_01_BS,XKTABLE_06_BS,DSS_E1_SYS01"
+// #DA Schema Source:"AttendanceSystemClientV2.relativityClient"
+// #DA Skipped Tables:"BJTABLE_09_VIEW,DMTABLE_08_BS,DMTABLE_08_VIEW,DSS_E1_BAS009,DSS_E1_SYS01,DSS_E1_SYS100,DSS_E1_SYS101,DSS_E1_SYS102,DSS_E1_SYS103,DSS_E1_SYS104,DSS_E1_SYS105,DSS_E1_SYS106,DSS_E1_SYS107,DSS_E1_TMP100,KCTABLE_04,KKTABLE_05_VIEW,RLSBGROUP_10,RLSBGROUPSTUDENT_11,SKTABLE_07_VIEW,XKTABLE_06_BS,XKTABLE_06_VIEW,XSTABLE_01_BS,XSTABLE_01_VIEW,XYTABLE_02"
 namespace AttendanceSystemClientV2.PC {
     
     [RemObjects.DataAbstract.Linq.TableName("BJTABLE_09_VIEWRO")]
@@ -1283,6 +1284,204 @@ namespace AttendanceSystemClientV2.PC {
             }
         }
     }
+    [RemObjects.DataAbstract.Linq.TableName("JSTABLE_03_VIEW")]
+    public partial class JSTABLE_03_VIEW : System.ICloneable, System.ComponentModel.INotifyPropertyChanged, System.ComponentModel.INotifyPropertyChanging {
+        protected JSTABLE_03_VIEW m____OldValues;
+        private long f____JSID;
+        private string f____JSNAME;
+        private string f____JSSEX;
+        private System.Nullable<long> f____XYID;
+        private string f____XYNAME;
+        private string f____JSPASSWORD;
+        private string f____ZW1;
+        private string f____ZW2;
+        private byte[] f____ZW1PIC;
+        private byte[] f____ZW2PIC;
+        [RemObjects.DataAbstract.Linq.FieldName("JSID")]
+        [RemObjects.DataAbstract.Linq.DataType(RemObjects.DataAbstract.Schema.DataType.LargeInt)]
+        [RemObjects.DataAbstract.Linq.PrimaryKey()]
+        [RemObjects.DataAbstract.Linq.LogChanges()]
+        public virtual long JSID {
+            get {
+                return f____JSID;
+            }
+            set {
+                if ((System.Collections.Generic.Comparer<long>.Default.Compare(this.f____JSID, value) != 0)) {
+                    this.OnPropertyChanging("JSID");
+                    f____JSID = value;
+                    this.OnPropertyChanged("JSID");
+                }
+            }
+        }
+        [RemObjects.DataAbstract.Linq.FieldName("JSNAME")]
+        [RemObjects.DataAbstract.Linq.DataType(RemObjects.DataAbstract.Schema.DataType.WideString)]
+        [RemObjects.DataAbstract.Linq.LogChanges()]
+        public virtual string JSNAME {
+            get {
+                return f____JSNAME;
+            }
+            set {
+                if ((System.Collections.Generic.Comparer<string>.Default.Compare(this.f____JSNAME, value) != 0)) {
+                    this.OnPropertyChanging("JSNAME");
+                    f____JSNAME = value;
+                    this.OnPropertyChanged("JSNAME");
+                }
+            }
+        }
+        [RemObjects.DataAbstract.Linq.FieldName("JSSEX")]
+        [RemObjects.DataAbstract.Linq.DataType(RemObjects.DataAbstract.Schema.DataType.WideString)]
+        [RemObjects.DataAbstract.Linq.LogChanges()]
+        public virtual string JSSEX {
+            get {
+                return f____JSSEX;
+            }
+            set {
+                if ((System.Collections.Generic.Comparer<string>.Default.Compare(this.f____JSSEX, value) != 0)) {
+                    this.OnPropertyChanging("JSSEX");
+                    f____JSSEX = value;
+                    this.OnPropertyChanged("JSSEX");
+                }
+            }
+        }
+        [RemObjects.DataAbstract.Linq.FieldName("XYID")]
+        [RemObjects.DataAbstract.Linq.DataType(RemObjects.DataAbstract.Schema.DataType.LargeInt)]
+        [RemObjects.DataAbstract.Linq.LogChanges()]
+        public virtual System.Nullable<long> XYID {
+            get {
+                return f____XYID;
+            }
+            set {
+                if ((System.Collections.Generic.Comparer<System.Nullable<long>>.Default.Compare(this.f____XYID, value) != 0)) {
+                    this.OnPropertyChanging("XYID");
+                    f____XYID = value;
+                    this.OnPropertyChanged("XYID");
+                }
+            }
+        }
+        [RemObjects.DataAbstract.Linq.FieldName("XYNAME")]
+        [RemObjects.DataAbstract.Linq.DataType(RemObjects.DataAbstract.Schema.DataType.WideString)]
+        [RemObjects.DataAbstract.Linq.LogChanges()]
+        public virtual string XYNAME {
+            get {
+                return f____XYNAME;
+            }
+            set {
+                f____XYNAME = value;
+            }
+        }
+        [RemObjects.DataAbstract.Linq.FieldName("JSPASSWORD")]
+        [RemObjects.DataAbstract.Linq.DataType(RemObjects.DataAbstract.Schema.DataType.WideString)]
+        [RemObjects.DataAbstract.Linq.LogChanges()]
+        public virtual string JSPASSWORD {
+            get {
+                return f____JSPASSWORD;
+            }
+            set {
+                if ((System.Collections.Generic.Comparer<string>.Default.Compare(this.f____JSPASSWORD, value) != 0)) {
+                    this.OnPropertyChanging("JSPASSWORD");
+                    f____JSPASSWORD = value;
+                    this.OnPropertyChanged("JSPASSWORD");
+                }
+            }
+        }
+        [RemObjects.DataAbstract.Linq.FieldName("ZW1")]
+        [RemObjects.DataAbstract.Linq.DataType(RemObjects.DataAbstract.Schema.DataType.WideString)]
+        [RemObjects.DataAbstract.Linq.LogChanges()]
+        public virtual string ZW1 {
+            get {
+                return f____ZW1;
+            }
+            set {
+                if ((System.Collections.Generic.Comparer<string>.Default.Compare(this.f____ZW1, value) != 0)) {
+                    this.OnPropertyChanging("ZW1");
+                    f____ZW1 = value;
+                    this.OnPropertyChanged("ZW1");
+                }
+            }
+        }
+        [RemObjects.DataAbstract.Linq.FieldName("ZW2")]
+        [RemObjects.DataAbstract.Linq.DataType(RemObjects.DataAbstract.Schema.DataType.WideString)]
+        [RemObjects.DataAbstract.Linq.LogChanges()]
+        public virtual string ZW2 {
+            get {
+                return f____ZW2;
+            }
+            set {
+                if ((System.Collections.Generic.Comparer<string>.Default.Compare(this.f____ZW2, value) != 0)) {
+                    this.OnPropertyChanging("ZW2");
+                    f____ZW2 = value;
+                    this.OnPropertyChanged("ZW2");
+                }
+            }
+        }
+        [RemObjects.DataAbstract.Linq.FieldName("ZW1PIC")]
+        [RemObjects.DataAbstract.Linq.DataType(RemObjects.DataAbstract.Schema.DataType.Blob)]
+        [RemObjects.DataAbstract.Linq.LogChanges()]
+        public virtual byte[] ZW1PIC {
+            get {
+                return f____ZW1PIC;
+            }
+            set {
+                if ((RemObjects.DataAbstract.Linq.LinqDataAdapter.CompareBytes(this.f____ZW1PIC, value) != true)) {
+                    this.OnPropertyChanging("ZW1PIC");
+                    f____ZW1PIC = value;
+                    this.OnPropertyChanged("ZW1PIC");
+                }
+            }
+        }
+        [RemObjects.DataAbstract.Linq.FieldName("ZW2PIC")]
+        [RemObjects.DataAbstract.Linq.DataType(RemObjects.DataAbstract.Schema.DataType.Blob)]
+        [RemObjects.DataAbstract.Linq.LogChanges()]
+        public virtual byte[] ZW2PIC {
+            get {
+                return f____ZW2PIC;
+            }
+            set {
+                if ((RemObjects.DataAbstract.Linq.LinqDataAdapter.CompareBytes(this.f____ZW2PIC, value) != true)) {
+                    this.OnPropertyChanging("ZW2PIC");
+                    f____ZW2PIC = value;
+                    this.OnPropertyChanged("ZW2PIC");
+                }
+            }
+        }
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        public event System.ComponentModel.PropertyChangingEventHandler PropertyChanging;
+        object System.ICloneable.Clone() {
+            JSTABLE_03_VIEW v____new = new JSTABLE_03_VIEW();
+            v____new.f____JSID = this.f____JSID;
+            v____new.f____JSNAME = this.f____JSNAME;
+            v____new.f____JSSEX = this.f____JSSEX;
+            v____new.f____XYID = this.f____XYID;
+            v____new.f____XYNAME = this.f____XYNAME;
+            v____new.f____JSPASSWORD = this.f____JSPASSWORD;
+            v____new.f____ZW1 = this.f____ZW1;
+            v____new.f____ZW2 = this.f____ZW2;
+            v____new.f____ZW1PIC = this.f____ZW1PIC;
+            v____new.f____ZW2PIC = this.f____ZW2PIC;
+            return v____new;
+        }
+        public virtual void BeginUpdate() {
+            this.m____OldValues = ((JSTABLE_03_VIEW)(((System.ICloneable)(this)).Clone()));
+        }
+        public virtual void EndUpdate(RemObjects.DataAbstract.Linq.LinqDataAdapter dataAdapter) {
+            dataAdapter.UpdateRow<JSTABLE_03_VIEW>(this.m____OldValues, this);
+            this.m____OldValues = null;
+        }
+        public virtual void CancelUpdate() {
+            this.m____OldValues = null;
+        }
+        protected virtual void OnPropertyChanging(string parameterName) {
+            if ((this.PropertyChanging != null)) {
+                this.PropertyChanging(this, new System.ComponentModel.PropertyChangingEventArgs(parameterName));
+            }
+        }
+        protected virtual void OnPropertyChanged(string parameterName) {
+            if (((this.PropertyChanged != null) 
+                        && (this.m____OldValues == null))) {
+                this.PropertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(parameterName));
+            }
+        }
+    }
     [RemObjects.DataAbstract.Linq.TableName("SKTABLE_07_VIEWRO")]
     public partial class SKTABLE_07_VIEWRO : System.ICloneable, System.ComponentModel.INotifyPropertyChanged, System.ComponentModel.INotifyPropertyChanging {
         protected SKTABLE_07_VIEWRO m____OldValues;
@@ -1624,6 +1823,7 @@ namespace AttendanceSystemClientV2.PC {
         private System.Collections.Generic.IEnumerable<KKTABLE_05_VIEWRO> f____KKTABLE_05_VIEWRO;
         private System.Collections.Generic.IEnumerable<XKTABLE_VIEWRO> f____XKTABLE_VIEWRO;
         private System.Collections.Generic.IEnumerable<XYTABLE_02RO> f____XYTABLE_02RO;
+        private System.Collections.Generic.IEnumerable<JSTABLE_03_VIEW> f____JSTABLE_03_VIEW;
         private System.Collections.Generic.IEnumerable<SKTABLE_07_VIEWRO> f____SKTABLE_07_VIEWRO;
         public DataContext() {
         }
@@ -1673,6 +1873,14 @@ namespace AttendanceSystemClientV2.PC {
             }
             set {
                 f____XYTABLE_02RO = value;
+            }
+        }
+        public virtual System.Collections.Generic.IEnumerable<JSTABLE_03_VIEW> JSTABLE_03_VIEW {
+            get {
+                return f____JSTABLE_03_VIEW;
+            }
+            set {
+                f____JSTABLE_03_VIEW = value;
             }
         }
         public virtual System.Collections.Generic.IEnumerable<SKTABLE_07_VIEWRO> SKTABLE_07_VIEWRO {

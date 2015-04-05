@@ -67,7 +67,7 @@ namespace AttendanceSystemClientV2
         }
 
         private void btnOk_Click(object sender, EventArgs e)
-        {
+        {//ok按钮做的工作
             Properties.Settings.Default.UserId = this.UserId;
             Properties.Settings.Default.Password = this.DoStorePassword ? this.Password : String.Empty;
             Properties.Settings.Default.StorePassword = this.DoStorePassword;
@@ -75,6 +75,8 @@ namespace AttendanceSystemClientV2
             
         }
         #endregion
+
+
 
 
     }

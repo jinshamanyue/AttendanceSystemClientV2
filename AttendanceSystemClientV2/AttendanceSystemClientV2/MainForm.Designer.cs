@@ -37,6 +37,7 @@
             this.object_9d9a2a38_7052_4f9c_b5cb_084d4e0b9c3c = new Telerik.WinControls.RootRadElement();
             this.downloadDataPage = new Telerik.WinControls.UI.RadPageViewPage();
             this.panel3_fill = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel3_up = new System.Windows.Forms.Panel();
             this.panel4_down = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -149,12 +150,23 @@
             // 
             // panel3_fill
             // 
+            this.panel3_fill.Controls.Add(this.button1);
             this.panel3_fill.Controls.Add(this.panel3_up);
             this.panel3_fill.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3_fill.Location = new System.Drawing.Point(0, 0);
             this.panel3_fill.Name = "panel3_fill";
             this.panel3_fill.Size = new System.Drawing.Size(1134, 539);
             this.panel3_fill.TabIndex = 1;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(816, 465);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(123, 71);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "获取数据";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel3_up
             // 
@@ -222,7 +234,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("微软雅黑", 20F);
-            this.label1.Location = new System.Drawing.Point(12, 23);
+            this.label1.Location = new System.Drawing.Point(22, 21);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(204, 35);
             this.label1.TabIndex = 0;
@@ -233,9 +245,9 @@
             this.startRollCallPage.Controls.Add(this.panel2_parent);
             this.startRollCallPage.Image = global::AttendanceSystemClientV2.Properties.Resources.rollcall;
             this.startRollCallPage.ItemSize = new System.Drawing.SizeF(103F, 94F);
-            this.startRollCallPage.Location = new System.Drawing.Point(133, 4);
+            this.startRollCallPage.Location = new System.Drawing.Point(135, 4);
             this.startRollCallPage.Name = "startRollCallPage";
-            this.startRollCallPage.Size = new System.Drawing.Size(1134, 539);
+            this.startRollCallPage.Size = new System.Drawing.Size(1132, 539);
             this.startRollCallPage.Text = "    ";
             // 
             // panel2_parent
@@ -245,7 +257,7 @@
             this.panel2_parent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2_parent.Location = new System.Drawing.Point(0, 0);
             this.panel2_parent.Name = "panel2_parent";
-            this.panel2_parent.Size = new System.Drawing.Size(1134, 539);
+            this.panel2_parent.Size = new System.Drawing.Size(1132, 539);
             this.panel2_parent.TabIndex = 0;
             // 
             // panel3
@@ -255,7 +267,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(564, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(570, 539);
+            this.panel3.Size = new System.Drawing.Size(568, 539);
             this.panel3.TabIndex = 1;
             // 
             // panel5
@@ -263,7 +275,7 @@
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(0, 0);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(570, 439);
+            this.panel5.Size = new System.Drawing.Size(568, 439);
             this.panel5.TabIndex = 1;
             // 
             // panel4
@@ -271,7 +283,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel4.Location = new System.Drawing.Point(0, 439);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(570, 100);
+            this.panel4.Size = new System.Drawing.Size(568, 100);
             this.panel4.TabIndex = 0;
             // 
             // panel2
@@ -287,9 +299,9 @@
             this.dataManagementPage.Controls.Add(this.panel3_parent);
             this.dataManagementPage.Image = global::AttendanceSystemClientV2.Properties.Resources.upload;
             this.dataManagementPage.ItemSize = new System.Drawing.SizeF(103F, 86F);
-            this.dataManagementPage.Location = new System.Drawing.Point(133, 4);
+            this.dataManagementPage.Location = new System.Drawing.Point(135, 4);
             this.dataManagementPage.Name = "dataManagementPage";
-            this.dataManagementPage.Size = new System.Drawing.Size(1134, 539);
+            this.dataManagementPage.Size = new System.Drawing.Size(1132, 539);
             this.dataManagementPage.Text = " ";
             // 
             // panel3_parent
@@ -299,7 +311,7 @@
             this.panel3_parent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3_parent.Location = new System.Drawing.Point(0, 0);
             this.panel3_parent.Name = "panel3_parent";
-            this.panel3_parent.Size = new System.Drawing.Size(1134, 539);
+            this.panel3_parent.Size = new System.Drawing.Size(1132, 539);
             this.panel3_parent.TabIndex = 0;
             // 
             // panel7
@@ -309,7 +321,7 @@
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel7.Location = new System.Drawing.Point(532, 0);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(602, 539);
+            this.panel7.Size = new System.Drawing.Size(600, 539);
             this.panel7.TabIndex = 1;
             // 
             // panel9
@@ -317,7 +329,7 @@
             this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel9.Location = new System.Drawing.Point(0, 0);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(602, 460);
+            this.panel9.Size = new System.Drawing.Size(600, 460);
             this.panel9.TabIndex = 1;
             // 
             // panel8
@@ -325,7 +337,7 @@
             this.panel8.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel8.Location = new System.Drawing.Point(0, 460);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(602, 79);
+            this.panel8.Size = new System.Drawing.Size(600, 79);
             this.panel8.TabIndex = 0;
             // 
             // panel6
@@ -414,6 +426,7 @@
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Button button1;
 
     }
 }

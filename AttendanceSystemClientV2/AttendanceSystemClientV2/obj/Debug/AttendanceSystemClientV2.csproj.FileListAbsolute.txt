@@ -14,3 +14,4 @@ E:\Developing\AttendanceSystemClientV2\AttendanceSystemClientV2\AttendanceSystem
 E:\Developing\AttendanceSystemClientV2\AttendanceSystemClientV2\AttendanceSystemClientV2\bin\Debug\TelerikCommon.dll
 E:\Developing\AttendanceSystemClientV2\AttendanceSystemClientV2\AttendanceSystemClientV2\bin\Debug\Telerik.WinControls.xml
 E:\Developing\AttendanceSystemClientV2\AttendanceSystemClientV2\AttendanceSystemClientV2\bin\Debug\Telerik.WinControls.UI.xml
+E:\Developing\AttendanceSystemClientV2\AttendanceSystemClientV2\AttendanceSystemClientV2\bin\Debug\AttendanceSystemClientV2.exe.config

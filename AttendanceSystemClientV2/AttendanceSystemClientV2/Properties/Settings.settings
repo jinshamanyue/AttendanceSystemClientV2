@@ -3,13 +3,13 @@
   <Profiles />
   <Settings>
     <Setting Name="UserId" Type="System.String" Scope="User">
-      <Value Profile="(Default)">1</Value>
+      <Value Profile="(Default)" />
     </Setting>
     <Setting Name="Password" Type="System.String" Scope="User">
-      <Value Profile="(Default)">123</Value>
+      <Value Profile="(Default)" />
     </Setting>
-	<Setting Name="StorePassword" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">True</Value>
+    <Setting Name="StorePassword" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
     </Setting>
     <Setting Name="Domain" Type="System.String" Scope="User">
       <Value Profile="(Default)">AttendanceSystem</Value>
